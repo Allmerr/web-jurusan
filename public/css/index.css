@@ -1,0 +1,186 @@
+/* utilities */
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Source+Sans+Pro:wght@400;700;900&family=Viga&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.brand {
+    font-family: "Inspiration";
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+/* navbar */
+ul li .dropdown img {
+    width: 30px;
+}
+
+/* carasouel */
+.slide {
+    max-height: 93vh;
+    overflow: hidden;
+}
+
+.slide img {
+    height: 100%;
+}
+
+/* sepatah dua kata */
+
+p.text-sepatah {
+    font-size: 1.5em;
+}
+
+a.btn-sepatah {
+    width: 50%;
+    font-family: "Viga";
+}
+
+/* about */
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.iframe-about {
+    width: 100%;
+    height: 400px;
+}
+
+.about .container .right {
+    text-align: justify;
+}
+
+/* news */
+.news .row h2 {
+    font-weight: bold;
+}
+
+.my-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 2rem;
+}
+
+.my-card-container .card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 13%), 0 3px 6px rgb(0 0 0 / 16%);
+}
+
+.my-card-container .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* footer */
+.footer a {
+    color: white;
+}
+
+/* blog.index */
+/* blog */
+.blog {
+    width: 60%;
+}
+
+.blog img {
+    width: 100%;
+}
+
+.blog .content p {
+    text-align: justify;
+}
+
+/* mading.index */
+/* nav-mading */
+.nav-mading-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.nav-mading img {
+    width: 100%;
+}
+
+.mading .cards-mading {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    gap: 20px;
+}
+
+.mading .cards-mading .card-mading {
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 5px 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mading .cards-mading .card-mading .card-footer a {
+    width: auto;
+    margin-right: 10px;
+}
+
+.mading .card-body {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mading .card-body img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.mading .card-body p,
+.mading .card-body h6 {
+    margin-bottom: 0;
+}
+/* mading */
+
+/* media query */
+
+@media (max-width: 1024px) {
+    /* mading.index */
+    /* nav-mading */
+    .mading .cards-mading {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 512px) {
+    /* sepatah dua kata */
+    a.btn-sepatah {
+        width: 100%;
+    }
+
+    /* about */
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .iframe-about {
+        height: 215px;
+    }
+
+    /* blog.index */
+    /* blog */
+    .blog {
+        width: 100%;
+    }
+
+    /* mading.index */
+    /* nav-mading */
+    .nav-mading-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+}

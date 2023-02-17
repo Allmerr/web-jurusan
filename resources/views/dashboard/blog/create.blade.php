@@ -18,7 +18,7 @@
         </div>
         <div class="mb-3">
             <label for="slug" class="form-label">Slug</label>
-            <input type="text" class="form-control @error('title') is-invalid @enderror" id="slug" name="slug" value="{{ old('slug') }}"  readonly required>
+            <input type="text" class="form-control @error('slug') is-invalid @enderror" id="slug" name="slug" value="{{ old('slug') }}"  readonly required>
             @error('slug')
             <div class="invalid-feedback">
                 {{ $message }}
@@ -26,20 +26,8 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="category" class="form-label">Category</label>
-            <select class="form-select" id="category" name="category_id">
-                @foreach ($categories as $category)
-                    @if ($category->id == old('category_id'))
-                        <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
-                    @else
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                    @endif
-                @endforeach
-            </select>
-        </div>
-        <div class="mb-3">
             <label for="image" class="form-label">Blog Image</label>
-            <img class="img-preview img-fluid mb-3">
+            <img class="img-preview img-fluid mb-3 ">
             <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" onchange="previewImage()">
             @error('image')
             <div class="invalid-feedback">
@@ -68,6 +56,7 @@
     const slug = document.querySelector('#slug');
 
     title.addEventListener('change', function () {
+        console.log('hello')
         fetch('/dashboard/blog/checkSlug?title=' + title.value)
             .then(response => response.json())
             .then(data => slug.value = data.slug);
@@ -89,6 +78,8 @@
         oFReader.onload = function (oFREvent) {
             imgPreview.src = oFREvent.target.result;
         }
+        imgPreview.classList.add('img-thumbnail');
+
     }
 </script>
 

@@ -1,5 +1,9 @@
+<div class="pra-navbar p-2">
+    <img src="img/logosmkn.png" alt="">
+    <img src="img/logorpl.png" alt="">
+</div>
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-trasparent">
     <div class="container">
         <a class="navbar-brand brand" href="/">Rekayasa Perangkat Lunak</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

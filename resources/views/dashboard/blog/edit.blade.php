@@ -27,18 +27,6 @@
             @enderror
         </div>
         <div class="mb-3">
-            <label for="category" class="form-label">Category</label>
-            <select class="form-select" id="category" name="category_id">
-                @foreach ($categories as $category)
-                    @if ($category->id == old('category_id', $post->category_id))
-                        <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
-                    @else
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                    @endif
-                @endforeach
-            </select>
-        </div>
-        <div class="mb-3">
             <label for="image" class="form-label">Blog Image</label>
 
             @if ($post->image)

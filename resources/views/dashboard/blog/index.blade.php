@@ -18,7 +18,6 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Title</th>
-          <th scope="col">Category</th>
           <th scope="col">Action</th>
         </tr>
       </thead>
@@ -27,7 +26,6 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $post->title }}</td>
-                <td>{{ $post->category->name }}</td>
                 <td>
                     <a href="/dashboard/blog/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></span></a>    
                     <a href="/dashboard/blog/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></span></a>    

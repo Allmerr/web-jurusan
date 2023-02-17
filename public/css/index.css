@@ -8,6 +8,14 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+html body {
+    background-image: url("/img/bc.png");
+}
+
+.pra-navbar img {
+    width: 100px;
+}
+
 .brand {
     font-family: "Inspiration";
     letter-spacing: 3px;
@@ -81,6 +89,10 @@ a.btn-sepatah {
 /* footer */
 .footer a {
     color: white;
+}
+
+.footer {
+    border-top: none;
 }
 
 /* blog.index */

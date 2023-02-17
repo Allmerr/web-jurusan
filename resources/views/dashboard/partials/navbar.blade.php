@@ -7,7 +7,7 @@
     <div class="nav-item text-nowrap">
         <div class="dropdown text-white">
             <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="{{ auth()->user()->photo }}" alt="" class="rounded-circle">
+                <img src="{{ asset('storage/' . auth()->user()->photo) }}" alt="" class="rounded-circle">
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/profile/{{ auth()->user()->username }}">Profile</a></li>

@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ForgotPasswordController;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 
@@ -23,18 +25,21 @@ Route::get('/', function () {
 });
 
 Route::get('/blog', function(){
-    return view('blog.index');
+    return view('blog.index' , [
+        'posts' => Blog::all(),
+    ]);
+});
+
+Route::get('/blog/detail/{blog:slug}', function(Blog $blog){
+    return view('blog.detail', [
+        'post' => $blog,
+    ]);
 });
 
 Route::get('/profile/{user:username}', [ProfileController::class, 'index']);
 Route::post('/profile/{user:username}', [ProfileController::class, 'update']);
 Route::get('/profile/{user:username}/edit', [ProfileController::class, 'edit']);
 
-
-
-Route::get('/blog/detail', function(){
-    return view('blog.detail');
-});
 
 Route::get('/mading', function(){
     return view('mading.index');
@@ -54,6 +59,9 @@ Route::post('/register', [RegisterController::class, 'store'])->middleware('gues
 Route::get('/dashboard', function(){
     return view('dashboard.index');
 })->middleware('auth');
+
+Route::get('/dashboard/blog/checkSlug', [BlogController::class , 'checkSlug'])->middleware('auth');
+Route::resource('/dashboard/blog', BlogController::class)->middleware('auth');
 
 
 Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');

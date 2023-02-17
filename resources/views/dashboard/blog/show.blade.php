@@ -6,7 +6,7 @@
         <div class="col-lg-6">
             <div class="blog-content">
                 <h6 style="color:#696969">Create at {{ $post->created_at }}</h6>
-                <p style="color: #acacac;">Made by <a style="color: #696969" href="/blog?author={{ $post->author->username }}">{{ $post->author->name }}</i> in <a style="color: #696969" href="/blog?category={{ $post->category->slug }}">{{ $post->category->name }}</a></p>
+                <p style="color: #acacac;">Made by <a style="color: #696969" href="/blog?author={{ $post->author->username }}">{{ $post->author->name }}</p>
                 
                 <div class="">
                     <a href="/dashboard/blog" class="badge bg-success text-decoration-none"><span data-feather="arrow-left"></span>Back</a>

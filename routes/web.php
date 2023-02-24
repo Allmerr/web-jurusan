@@ -21,7 +21,9 @@ use App\Models\User;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', [
+        'posts' => Blog::all(),
+    ]);
 });
 
 Route::get('/blog', function(){

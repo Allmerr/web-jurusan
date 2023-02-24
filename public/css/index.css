@@ -13,7 +13,7 @@ html body {
 }
 
 .pra-navbar img {
-    width: 100px;
+    width: 60px;
 }
 
 .brand {
@@ -48,6 +48,14 @@ a.btn-sepatah {
     font-family: "Viga";
 }
 
+/* visi-misi */
+.visi-misi ol {
+    text-align: justify;
+}
+
+.visi-misi h4 {
+    text-align: justify;
+}
 /* about */
 
 .about .container {
@@ -92,6 +100,7 @@ a.btn-sepatah {
 }
 
 .footer {
+    /* margin-top: -50px; */
     border-top: none;
 }
 

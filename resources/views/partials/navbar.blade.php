@@ -21,6 +21,31 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/mading">Mading</a>
                 </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Akademik
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/visi-misi">Visi Misi</a></li>
+                            <li><a class="dropdown-item" href="#">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="#">Prestasi</a></li>
+                            <li><a class="dropdown-item" href="#">Kegiatan pembelajaran</a></li>
+                            <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Civitas
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pengajar</a></li>
+                            <li><a class="dropdown-item" href="#">Alumni</a></li>
+                        </ul>
+                    </div>
+                </li>
                 @auth
                 <li>
                     <div class="dropdown">

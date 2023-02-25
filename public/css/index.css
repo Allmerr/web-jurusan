@@ -23,6 +23,11 @@ html body {
 }
 
 /* navbar */
+
+.navbar ul li button {
+    color: rgba(0, 0, 0, 0.6);
+}
+
 ul li .dropdown img {
     width: 30px;
 }
@@ -118,6 +123,69 @@ a.btn-sepatah {
     text-align: justify;
 }
 
+/* akademik.kegiatan-pembelajaran */
+/* kegiatan-pembelajaran */
+
+.kp-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* akademik.visi-misi */
+/* akademik */
+.akademik {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    padding: 0 10px 0 10px;
+}
+
+.akademik .sidebar-visi-misi {
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.sidebar-visi-misi ul {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
+    border: solid 1px #eee;
+    box-shadow: rgba(99, 99, 99, 0.05) 0px 2px 8px 0px;
+}
+
+.sidebar-visi-misi ul li {
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sidebar-visi-misi ul li.active {
+    background-color: #1abc9c;
+}
+
+.sidebar-visi-misi ul a:has(.active) li {
+    color: white;
+}
+
+.sidebar-visi-misi ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-visi-misi ul li:hover a {
+    color: #1abc9c;
+}
+
+.sidebar-visi-misi ul a {
+    text-decoration: none;
+}
+
+.sidebar-visi-misi ul a li {
+    color: #1abc9c;
+    text-transform: uppercase;
+}
+
 /* mading.index */
 /* nav-mading */
 .nav-mading-main {
@@ -168,9 +236,23 @@ a.btn-sepatah {
 /* media query */
 
 @media (max-width: 1024px) {
+    /* akademik.visi-misi */
+    /* akademik */
+    .akademik {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     /* mading.index */
     /* nav-mading */
     .mading .cards-mading {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* akademik.kegiatan-pembelajaran */
+    /* kegiatan-pembelajaran */
+
+    .kp-images {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
@@ -203,5 +285,12 @@ a.btn-sepatah {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 10px;
+    }
+
+    /* akademik.kegiatan-pembelajaran */
+    /* kegiatan-pembelajaran */
+
+    .kp-images {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }

@@ -70,3 +70,23 @@ Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPassw
 Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post'); 
 Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
 Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+
+Route::get('/visi-misi', function(){
+    return view('akademik.visi-misi'); 
+});
+
+Route::get('/kurikulum', function(){
+    return view('akademik.kurikulum'); 
+});
+
+Route::get('/prestasi', function(){
+    return view('akademik.prestasi'); 
+});
+
+Route::get('/kegiatan-pembelajaran', function(){
+    return view('akademik.kegiatan-pembelajaran'); 
+});
+
+Route::get('/pengajar', function(){
+    return view('akademik.pengajar'); 
+});

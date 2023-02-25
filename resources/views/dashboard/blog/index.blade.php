@@ -7,7 +7,7 @@
   {{-- @dd($posts) --}}
   <div class="table-responsive">
     @if (session()->has('success'))
-    <div class="alert alert-success alert-dismissible fade show mt-2" role="alert" style="width: 500px">
+    <div class="alert alert-success alert-dismissible fade show mt-2" role="alert">
         {{ session('success') }}
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>    

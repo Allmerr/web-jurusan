@@ -186,6 +186,24 @@ a.btn-sepatah {
     text-transform: uppercase;
 }
 
+/* civitas.pengajar */
+/* pengajar */
+.pengajar .pengajar-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+}
+
+.pengajar .pengajar-cards .pengajar-card {
+    border: solid 1px #eee;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.pengajar .pengajar-cards .pengajar-card img {
+    margin-top: -50px;
+}
+
 /* mading.index */
 /* nav-mading */
 .nav-mading-main {
@@ -255,6 +273,13 @@ a.btn-sepatah {
     .kp-images {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
+
+    /* civitas.pengajar */
+    /* pengajar */
+    .pengajar .pengajar-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 50px;
+    }
 }
 
 @media (max-width: 512px) {
@@ -292,5 +317,12 @@ a.btn-sepatah {
 
     .kp-images {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    /* civitas.pengajar */
+    /* pengajar */
+    .pengajar .pengajar-cards {
+        grid-template-columns: 1fr;
+        gap: 50px;
     }
 }

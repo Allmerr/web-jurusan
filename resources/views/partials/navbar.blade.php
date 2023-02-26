@@ -41,7 +41,7 @@
                            Civitas
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pengajar</a></li>
+                            <li><a class="dropdown-item" href="/pengajar">Pengajar</a></li>
                             <li><a class="dropdown-item" href="#">Alumni</a></li>
                         </ul>
                     </div>

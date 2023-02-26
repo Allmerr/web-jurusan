@@ -88,5 +88,5 @@ Route::get('/kegiatan-pembelajaran', function(){
 });
 
 Route::get('/pengajar', function(){
-    return view('akademik.pengajar'); 
+    return view('civitas.pengajar'); 
 });

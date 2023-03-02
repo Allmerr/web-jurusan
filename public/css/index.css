@@ -13,7 +13,7 @@ html body {
 }
 
 .pra-navbar img {
-    width: 60px;
+    width: 50px;
 }
 
 .brand {
@@ -100,13 +100,50 @@ a.btn-sepatah {
 }
 
 /* footer */
-.footer a {
-    color: white;
+.footer {
+    background-color: #212529;
+    /* background-color: #68b984; */
+    padding: 25px 0 25px 0;
+    color: #fff;
 }
 
-.footer {
-    /* margin-top: -50px; */
-    border-top: none;
+.footer-brand {
+    font-family: "Inspiration";
+}
+.footer .footer-navbar img {
+    width: 45px;
+}
+
+.footer .footer-content {
+    display: flex;
+    gap: 8rem;
+}
+
+.footer .footer-content .social-about {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    align-items: baseline;
+    width: 30%;
+}
+
+.footer .footer-content .socail-method {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(1, auto);
+}
+
+.footer .social-media .fa-brands {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+.footer .footer-navbar {
+    padding-bottom: 30px;
 }
 
 /* blog.index */
@@ -190,7 +227,7 @@ a.btn-sepatah {
 /* pengajar */
 .pengajar .pengajar-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
@@ -202,6 +239,14 @@ a.btn-sepatah {
 
 .pengajar .pengajar-cards .pengajar-card img {
     margin-top: -50px;
+}
+
+.pengajar .pengajar-cards a {
+    text-decoration: none;
+}
+
+.pengajar .pengajar-cards h5 {
+    color: black;
 }
 
 /* mading.index */
@@ -254,6 +299,15 @@ a.btn-sepatah {
 /* media query */
 
 @media (max-width: 1024px) {
+    /* footer */
+    .footer .footer-content {
+        display: block;
+    }
+
+    .footer .footer-content .social-about {
+        width: 100%;
+    }
+
     /* akademik.visi-misi */
     /* akademik */
     .akademik {

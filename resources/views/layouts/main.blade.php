@@ -3,7 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>RPL demo</title>
+        <title>Rekayasa Perangkat Lunak</title>
+        {{-- favicon --}}
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        {{-- icon --}}
+        <script src="https://kit.fontawesome.com/c0bc3cdbee.js" crossorigin="anonymous"></script>
         <!-- css -->
         <link rel="stylesheet" href="{{ asset('/css/index.css') }}">
         {{-- boostrap --}}

@@ -26,7 +26,7 @@
         <div class="container text-center py-5 d-flex justify-content-center">
             <div class="col-md-8 d-flex flex-column align-items-center justify-content-center">
                 <p class="text-sepatah"><i>"Menghasilkan lulusan yang berakhlak mulia, taat beribadah, berkompeten sesuai bidang keahlian, dan mampu beradaptasi serta bersaing di dunia usaha dan industri."</i></p>
-                <a class="btn btn-dark d-block mt-4 btn-sepatah" href="#"><h5 class="pt-1">Read The Latest Blog</h5></a>
+                <a class="btn btn-dark d-block mt-4 btn-sepatah" href="/blog"><h5 class="pt-1">Baca Blog Terbaru Kami</h5></a>
             </div>
         </div>
         <!-- about -->
@@ -37,7 +37,7 @@
                 </div>
                 <div class="right p-3 d-flex flex-column justify-content-center align-items-center text-justify">
                     <h3>Tentang Kami</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi distinctio, rem fugit aliquid accusantium blanditiis sunt id dignissimos doloribus, aliquam saepe dolorum. Reiciendis ullam illum quam excepturi error, perferendis repellendus.</p>
+                    <p>Rekayasa Perangkat Lunak adalah satu bidang profesi yang mendalami cara – cara pengembangan perangkat lunak teramasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan penagkat lunak dan manajemen kualitas.</p>
                 </div>
             </div>
         </div>

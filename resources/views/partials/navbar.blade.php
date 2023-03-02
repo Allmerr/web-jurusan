@@ -16,10 +16,7 @@
                     <a class="nav-link" href="/blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/diskusi">Diskusi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/mading">Mading</a>
+                    <a class="nav-link" href="/testimoni">Testimoni</a>
                 </li>
                 <li>
                     <div class="dropdown">
@@ -28,10 +25,10 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="/visi-misi">Visi Misi</a></li>
-                            <li><a class="dropdown-item" href="#">Kurikulum</a></li>
-                            <li><a class="dropdown-item" href="#">Prestasi</a></li>
-                            <li><a class="dropdown-item" href="#">Kegiatan pembelajaran</a></li>
-                            <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                            <li><a class="dropdown-item" href="/visi-misi">Kurikulum</a></li>
+                            <li><a class="dropdown-item" href="/prestasi">Prestasi</a></li>
+                            <li><a class="dropdown-item" href="/kegiatan-pembelajaran">Kegiatan pembelajaran</a></li>
+                            <li><a class="dropdown-item" href="/fasilitas">Fasilitas</a></li>
                         </ul>
                     </div>
                 </li>

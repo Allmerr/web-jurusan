@@ -4,10 +4,10 @@
     <div class="nav-mading my-5 p-3">
         <div class="container nav-mading-main">
             <div class="left">
-                <h1>Blog Siswa</h1>
-                <h4>Komunitas Siswa Berbagi Pengetahuan</h4>
+                <h1>Blog Jurusan</h1>
+                <h4>Komunitas Siswa dan Guru Berbagi Pengetahuan</h4>
                 <div>
-                    <a href="#" class="btn btn-secondary bg-transparent text-dark border border-secondary fs-5">Post Blog</a>
+                    <a href="/dashboard" class="btn btn-secondary bg-transparent text-dark border border-secondary fs-5">Post Blog</a>
                 </div>
             </div>
             <div class="right">

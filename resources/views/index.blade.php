@@ -67,7 +67,7 @@
                         <img src="{{ asset('storage/' . $post->image) }}" alt="">
                         <div class="card-body">
                             <h3 class="card-title">{{ $post->title }}</h3>
-                            <p class="card-text" style="color:#acacac;">Create by <a href="" style="color: #696969"></a> in <a href="" style="color: #696969">{{ $post->author->name }}</a></p>
+                            <p class="card-text" style="color:#acacac;">Create by <a href="" style="color: #696969"></a> in <a href="/profile/{{ $post->author->name }}" style="color: #696969">{{ $post->author->name }}</a></p>
                             <p style="color:#acacac;">Created at<span style="color: #696969"> {{ $post->created_at }}</span></p>
                             <a class="border border-secondary p-1 rounded text-dark text-decoration-none" href="/blog/detail/{{ $post->slug }}">See More</a>
                         </div>

@@ -107,6 +107,11 @@ a.btn-sepatah {
     color: #fff;
 }
 
+.footer iframe {
+    width: 100%;
+    border-radius: 10px;
+}
+
 .footer-brand {
     font-family: "Inspiration";
 }

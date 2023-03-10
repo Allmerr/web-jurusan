@@ -8,7 +8,7 @@
         <div class="footer-content">
             <div class="social-about">
                 <i class="fa-solid fa-location-dot"></i>
-                <a href="/tentang#lokasi" style="text-decoration:none;color:white;">
+                <a href="" style="text-decoration:none;color:white;">
                     <p>SMK NEGERI 1 Cibinong | Jl. Raya Karadenan No.7, Karadenan, Kec. Cibinong, Kabupaten Bogor, Jawa Barat 16111</p>
                 </a>
                 <i class="fa-solid fa-phone"></i>
@@ -22,6 +22,12 @@
                 </a>
                 <a href="/blog" style="text-decoration:none;color:white;">
                     <p>Blog</p>
+                </a>
+                <a href="/alumni" style="text-decoration:none;color:white;">
+                    <p>Alumni</p>
+                </a>
+                <a href="/easteregg" style="text-decoration:none;color:white;">
+                    <p>Creator</p>
                 </a>
             </div>
             <div class="social-method">
@@ -39,21 +45,10 @@
                 </a>
             </div>
             <div class="social-method">
-                <a href="/alumni" style="text-decoration:none;color:white;">
-                    <p>Alumni</p>
-                </a>
-                <a href="/easteregg" style="text-decoration:none;color:white;">
-                    <p>Creator</p>
-                </a>
+                <p><i class="fa-solid fa-location-dot"></i> Alamat</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9977648031027!2d106.80525221436349!3d-6.5219633655733915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c3db9bbedcc3%3A0x1f5280e86053b1e9!2sSMK%20N%201%20Cibinong!5e0!3m2!1sen!2sid!4v1678452132868!5m2!1sen!2sid" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="social-media">
-                <a href="https://www.youtube.com/embed/Lt-9mmAAozE" style="color: inherit" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-            </a>
-                <a href="#" style="color: inherit" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-            </div>
+            
         </div>
     </div>
 </div>

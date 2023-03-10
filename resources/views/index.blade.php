@@ -4,13 +4,13 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('/img/bg-index.jpg') }}" class="d-block w-100" alt="{{ asset('/img/bg-index.jpg') }}">
+                    <img src="{{ asset('/img/bg1.jpg') }}" class="d-block w-100" alt="{{ asset('/img/bg1.jpg') }}">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('/img/bg-index.jpg') }}" class="d-block w-100" alt="{{ asset('/img/bg-index.jpg') }}">
+                    <img src="{{ asset('/img/bg4.jpeg') }}" class="d-block w-100" alt="{{ asset('/img/bg4.jpeg') }}">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('/img/bg-index.jpg') }}" class="d-block w-100" alt="{{ asset('/img/bg-index.jpg') }}">
+                    <img src="{{ asset('/img/bg3.jpeg') }}" class="d-block w-100" alt="{{ asset('/img/bg3.jpeg') }}">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

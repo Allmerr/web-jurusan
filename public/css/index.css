@@ -22,6 +22,44 @@ html body {
     font-weight: 500;
 }
 
+/* poster iklan */
+/* blog */
+.poster-iklan.active-poster-iklan {
+    position: fixed;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.poster-iklan img {
+    display: none;
+}
+
+.poster-iklan.active-poster-iklan img {
+    display: inherit;
+    height: 90vh;
+    margin: auto;
+}
+
+.poster-iklan .poster-iklan-close {
+    display: none;
+}
+
+.poster-iklan.active-poster-iklan .poster-iklan-close {
+    display: inherit;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-family: serif;
+    color: white;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
 /* navbar */
 
 .navbar ul li button {
@@ -383,5 +421,17 @@ a.btn-sepatah {
     .pengajar .pengajar-cards {
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+
+    /* poster iklan */
+    /* blog */
+    .poster-iklan img {
+        height: 80vh;
+    }
+
+    .poster-iklan .poster-iklan-close {
+        top: 15px;
+        right: 15px;
+        font-size: 2em;
     }
 }

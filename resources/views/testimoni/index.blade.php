@@ -1,5 +1,13 @@
 @extends('layouts.main')
 @section('content')
+    {{-- poster-iklan --}}
+    <div class="poster-iklan active-poster-iklan">
+        <img src="{{ asset('img/iklan-poster.jpeg') }}" alt="" class="img img-thumbnail">
+        <div class="poster-iklan-close">
+            <i class="bi bi-x-circle"></i>
+        </div>
+    </div>
+    {{-- akhir-poster-iklan --}}
     {{-- nav-mading --}}
     <div class="nav-mading my-5 p-3">
         <div class="container nav-mading-main">
@@ -82,4 +90,12 @@
             </div>
         </div>
     </div>
+
+{{-- script poster --}}
+<script>
+    document.querySelector('.poster-iklan-close').addEventListener('click', (e)=>{
+        document.querySelector('.poster-iklan').classList.remove('active-poster-iklan');
+    })
+</script>
+{{-- akhir script poster --}}
 @endsection
